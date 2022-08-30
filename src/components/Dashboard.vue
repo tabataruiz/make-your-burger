@@ -106,7 +106,9 @@ export default {
 
       const res = await req.json();
 
-      console.log(res);
+      this.msg = `O Pedido Nº ${res.id} atualizado para ${res.status}!`;
+
+      setTimeout(() => (this.msg = ""), 5000);
     }
   },
   mounted() {
