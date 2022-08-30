@@ -1,6 +1,6 @@
 <template>
   <div class="burger-form">
-    <p>Componente de mensagem</p>
+    <Message :msg="msg" v-show="msg"></Message>
 
     <div>
       <form class="burger-g" @submit="createBurger">
@@ -61,8 +61,12 @@
 </template>
 
 <script>
+import Message from "./Message.vue";
 export default {
   name: "BurgerForm",
+  components: {
+    Message
+  },
   data() {
     return {
       paes: null,
@@ -72,7 +76,8 @@ export default {
       pao: null,
       carne: null,
       opcionais: [],
-      mensagem: null
+      mensagem: null,
+      msg: null
     };
   },
   methods: {
@@ -105,6 +110,10 @@ export default {
 
       const res = await req.json();
 
+      this.msg = `Tudo certo ${res.nome}. Pedido realizado com sucesso!`;
+
+      setTimeout(() => (this.msg = ""), 5000);
+
       this.nome = "";
       this.carne = "";
       this.pao = "";
@@ -121,6 +130,8 @@ export default {
 .burger-form {
   max-width: 400px;
   margin: 0 auto;
+  background: #fff;
+  padding: 15px;
 }
 
 .input-container {

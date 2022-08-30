@@ -1,8 +1,10 @@
 <template>
-  <Banner></Banner>
-  <div class="main-container">
-    <h1>Monte o seu burger</h1>
-    <BurgerForm></BurgerForm>
+  <div class="main">
+    <Banner></Banner>
+    <div class="main-container">
+      <h1>Monte o seu burger</h1>
+      <BurgerForm></BurgerForm>
+    </div>
   </div>
 </template>
 
@@ -18,3 +20,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.main {
+  background: #fafafa;
+}
+</style>
