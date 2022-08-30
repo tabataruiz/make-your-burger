@@ -79,24 +79,15 @@
   ],
   "burgers": [
     {
-      "nome": "Ross Geller",
-      "carne": "Alcatra",
+      "nome": "Marcos Junior",
+      "carne": "Maminha",
       "pao": "Italiano Branco",
       "opcionais": [
-        "Bacon"
+        "Bacon",
+        "Salame"
       ],
-      "status": "Finalizado",
-      "id": 3
-    },
-    {
-      "nome": "Phoebe Buffay",
-      "carne": "Picanha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Cebola roxa"
-      ],
-      "status": "Finalizado",
-      "id": 4
+      "status": "Solicitado",
+      "id": 1
     }
   ]
 }
