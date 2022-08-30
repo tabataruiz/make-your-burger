@@ -79,60 +79,24 @@
   ],
   "burgers": [
     {
-      "nome": "Tabata",
+      "nome": "Ross Geller",
       "carne": "Alcatra",
       "pao": "Italiano Branco",
-      "opcionais": ["Bacon", "Salame"],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
-      "nome": "Pedro",
-      "carne": "Alcatra",
-      "pao": "Italiano Branco",
-      "opcionais": ["Salame"],
+      "opcionais": [
+        "Bacon"
+      ],
       "status": "Solicitado",
       "id": 3
     },
     {
-      "nome": "Marcos",
-      "carne": "Veggie burger",
-      "pao": "Integral",
-      "opcionais": ["Bacon"],
+      "nome": "Phoebe Buffay",
+      "carne": "Picanha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Cebola roxa"
+      ],
       "status": "Solicitado",
       "id": 4
-    },
-    {
-      "nome": "Catrina",
-      "carne": "Alcatra",
-      "pao": "Parmesão e Orégano",
-      "opcionais": ["Bacon"],
-      "status": "Solicitado",
-      "id": 5
-    },
-    {
-      "nome": "Manolo",
-      "carne": "Veggie burger",
-      "pao": "3 Queijos",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 6
-    },
-    {
-      "nome": "Slinky",
-      "carne": "Picanha",
-      "pao": "Italiano Branco",
-      "opcionais": ["Bacon"],
-      "status": "Solicitado",
-      "id": 7
-    },
-    {
-      "nome": "Phoebe Buffay",
-      "carne": "Veggie burger",
-      "pao": "Integral",
-      "opcionais": ["Tomate", "Cebola roxa", "Pepino"],
-      "status": "Solicitado",
-      "id": 8
     }
   ]
 }

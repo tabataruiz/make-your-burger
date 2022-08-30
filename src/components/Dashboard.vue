@@ -1,4 +1,5 @@
 <template>
+  <Message :msg="msg" v-show="msg"></Message>
   <div class="burger-table">
     <div>
       <div class="burger-table-head">
@@ -35,7 +36,9 @@
               {{ status.tipo }}
             </option>
           </select>
-          <button class="btn-delete">Cancelar</button>
+          <button class="btn-delete" @click="deleteBurger(burger.id)">
+            Remover
+          </button>
         </div>
       </div>
     </div>
@@ -43,13 +46,19 @@
 </template>
 
 <script>
+import Message from "./Message.vue";
+
 export default {
   name: "Dashboard",
+  components: {
+    Message
+  },
   data() {
     return {
       burgers: null,
       burger_id: null,
-      status_data: []
+      status_data: [],
+      msg: null
     };
   },
   methods: {
@@ -66,6 +75,19 @@ export default {
       const data = await req.json();
 
       this.status_data = data;
+    },
+    async deleteBurger(id) {
+      const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+        method: "DELETE"
+      });
+
+      const res = await req.json();
+
+      this.msg = `Pedido Nº ${id} removido com sucesso.`;
+
+      setTimeout(() => (this.msg = ""), 5000);
+
+      this.getPedidos();
     }
   },
   mounted() {
