@@ -85,7 +85,7 @@
       "opcionais": [
         "Bacon"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 3
     },
     {
@@ -95,7 +95,7 @@
       "opcionais": [
         "Cebola roxa"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 4
     }
   ]
